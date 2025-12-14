@@ -51,7 +51,6 @@ The investor relations ecosystem relies heavily on unstructured filings, manual 
 ## 👩🏽‍💻 Setup and Installation
 
 ### 1. Clone the Repository
-```bash
 git clone https://github.com/your-username/iec-investor-relations-ai.git
 cd iec-investor-relations-ai
 ### Key Dependencies
