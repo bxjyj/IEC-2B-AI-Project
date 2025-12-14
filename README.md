@@ -1,8 +1,5 @@
 # INTERNATIONAL ELITE CAPITAL 2B - Investor Relations AI Product
 
-
-⚠️ _Update the above title with your AI Studio Challenge Project name. Remove all guidance notes and examples in this template before finalizing your README._
-
 ---
 
 ### 👥 **Team Members**
