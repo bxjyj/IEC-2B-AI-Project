@@ -11,9 +11,9 @@
 
 | Name             | GitHub Handle | Contribution                                                             |
 |------------------|---------------|--------------------------------------------------------------------------|
-| Jade Xu    | @bxjyj | Data collection, data preprocessing, data analysis, ML model design, prompt engineering, data engineering, application development, app hosting   |
+| Jade Xu    | @bxjyj | Data collection, data preprocessing, data analysis, ML model design, prompt engineering (OpenAI embeddings and Claude API), agentic AI prototype, data engineering, application development   |
 | Anusha Kokala   | @anushakokala     | Data collection, data preprocessing (data manipulation & visualization, model selection + training, and feature engineering) |
-| Shatakshi Tyag     | @ |               |
+| Shatakshi Tyagi     | @ |               |
 |  Ayooluwa Wojuade    | @       | |
 
 
@@ -28,6 +28,7 @@
 - Utilized **OpenAI embeddings** and **Claude API prompt engineering** to summarize investor profiles and identify potential investor–startup alignment more efficiently than manual research.
 - Identified **key matching signals** (industry, funding stage, founder background, investment history) to improve relevance and reduce misaligned outreach for startups and investors.
 - Generated actionable insights to support **International Elite Capital’s (IEC)** goal of improving discovery, visibility, and meaningful connections across startups, investors, and media stakeholders.
+- Created a **Investor-Company Matchmaking Platform** through streamlit to host the capabilites of our team's findings and provide clients with a working interface to test the product.
 
 ---
 
@@ -62,6 +63,7 @@ cd iec-investor-relations-ai
 - openai
 - requests
 - jupyter
+- streamlit
 
 ## 📊 Data Exploration
 
@@ -110,7 +112,13 @@ cd iec-investor-relations-ai
 - Evaluation focused on exploratory feasibility rather than deployment-ready accuracy
 
 ---
+## 🕺 Platform Deployment
+Streamlit was utilized to give the backend deployment an interface. The streamlit python code leverages a CSV database of investors provided by IEC, as well as OpenAI embeddings and Claude API to determine investors that would be interested in a provided start-up pitch. The output provides a score of the Investor-Company match via cosine similarity score, why the investor would be a good fit for the start up, as well as an a email hook so that said start up can contact the investor.
 
+Here is a demo video of the platform in action.
+https://youtu.be/xNknvtHEzWk
+
+---
 ## 📈 Results & Key Findings
 
 ### Model Performance
@@ -134,22 +142,12 @@ cd iec-investor-relations-ai
 - Explore fairness, bias, and explainability in investor recommendations
 
 
-
 ## 📝 **License**
 
-If applicable, indicate how your project can be used by others by specifying and linking to an open source license type (e.g., MIT, Apache 2.0). Make sure your Challenge Advisor approves of the selected license type.
-
-**Example:**
 This project is licensed under the MIT License.
 
 ---
 
-## 📄 **References** (Optional but encouraged)
+## 🙏 **Acknowledgements**
 
-Cite relevant papers, articles, or resources that supported your project.
-
----
-
-## 🙏 **Acknowledgements** (Optional but encouraged)
-
-Thank your Challenge Advisor, host company representatives, TA, and others who supported your project.
+Thank you to our Challenge Advisors: Annabelle Zhang, Renuka Belwalkar, Sherry Feng, and Naman Sogani. We would also like to thank our Coach Yin Su, as well as our mentors that guided on this project. Thanks again to IEC and Break Through Tech for providing us this opportunity.
