@@ -18,88 +18,122 @@
 
 ---
 
-## 🎯 **Project Highlights**
+# Investor Relations AI Matchmaking Platform
 
-**Example:**
+## 🎯 Project Highlights
 
-- Developed a machine learning model using `[model type/technique]` to address `[challenge project task]`.
-- Achieved `[key metric or result]`, demonstrating `[value or impact]` for `[host company]`.
-- Generated actionable insights to inform business decisions at `[host company or stakeholders]`.
-- Implemented `[specific methodology]` to address industry constraints or expectations.
-
----
-
-## 👩🏽‍💻 **Setup and Installation**
-
-**Provide step-by-step instructions so someone else can run your code and reproduce your results. Depending on your setup, include:**
-
-* How to clone the repository
-* How to install dependencies
-* How to set up the environment
-* How to access the dataset(s)
-* How to run the notebook or scripts
+- Developed an **AI-powered investor–company matchmaking system** leveraging **Random Forest modeling and Large Language Models (LLMs)** to address fragmented and unstructured investor relations data.
+- Built a **centralized data pipeline** using **SEC EDGAR filings** to transform raw XML/JSON filings into clean, structured datasets suitable for AI analysis.
+- Utilized **OpenAI embeddings** and **Claude API prompt engineering** to summarize investor profiles and identify potential investor–startup alignment more efficiently than manual research.
+- Identified **key matching signals** (industry, funding stage, founder background, investment history) to improve relevance and reduce misaligned outreach for startups and investors.
+- Generated actionable insights to support **International Elite Capital’s (IEC)** goal of improving discovery, visibility, and meaningful connections across startups, investors, and media stakeholders.
 
 ---
 
-## 🏗️ **Project Overview**
+## 🏗️ Project Overview
 
-**Describe:**
+This project was completed as part of the **Break Through Tech AI Program – AI Studio**, in collaboration with **International Elite Capital (IEC)**.
 
-- How this project is connected to the Break Through Tech AI Program
-- Your AI Studio host company and the project objective and scope
-- The real-world significance of the problem and the potential impact of your work
+### Host Company
+**International Elite Capital (IEC)** focuses on improving how startups, investors, and media discover and connect in a crowded and fragmented ecosystem.
 
----
+### Project Objective
+The goal of this project was to:
+- Reduce data chaos in investor relations
+- Improve startup visibility
+- Enable smarter, AI-driven matchmaking between companies, investors, and media stakeholders
 
-## 📊 **Data Exploration**
-
-**You might consider describing the following (as applicable):**
-
-* The dataset(s) used: origin, format, size, type of data
-* Data exploration and preprocessing approaches
-* Insights from your Exploratory Data Analysis (EDA)
-* Challenges and assumptions when working with the dataset(s)
-
-**Potential visualizations to include:**
-
-* Plots, charts, heatmaps, feature visualizations, sample dataset images
+### Real-World Significance
+The investor relations ecosystem relies heavily on unstructured filings, manual research, and misaligned outreach, leading to lost opportunities. This project demonstrates how **AI and LLMs can organize complex financial data**, improve match quality, and reduce the time required for investor research and outreach.
 
 ---
 
-## 🧠 **Model Development**
+## 👩🏽‍💻 Setup and Installation
 
-**You might consider describing the following (as applicable):**
+### 1. Clone the Repository
+```bash
+git clone https://github.com/your-username/iec-investor-relations-ai.git
+cd iec-investor-relations-ai
+### Key Dependencies
+- pandas
+- numpy
+- scikit-learn
+- matplotlib / seaborn
+- openai
+- requests
+- jupyter
 
-* Model(s) used (e.g., CNN with transfer learning, regression models)
-* Feature selection and Hyperparameter tuning strategies
-* Training setup (e.g., % of data for training/validation, evaluation metric, baseline performance)
+## 📊 Data Exploration
 
+### Dataset Description
+- **Source:** SEC EDGAR Filings (SEC API)
+- **Format:** XML, JSON → CSV / Excel
+- **Final Dataset Size:** 66 samples, 37 features
+- **Data Type:** Structured and unstructured financial, company, and investor data
+
+### Data Preparation & EDA
+- Reviewed multiple SEC filings to identify relevant investor and company attributes
+- Removed low-signal or inconsistent data
+- Standardized features across companies and investors
+- Converted long-form text into structured categorical variables
+- Mapped startup traits to investor preferences
+
+### Key Insights
+- Not all SEC filings provide meaningful matching signals
+- Clean data is critical for effective LLM prompting
+- Investor investment patterns are often predictable based on historical data
+
+### Challenges & Assumptions
+- Small dataset limits generalizability
+- Public filings may be incomplete or inconsistent
+- Historical behavior is assumed to reflect future investor preferences
 
 ---
 
-## 📈 **Results & Key Findings**
+## 🧠 Model Development
 
-**You might consider describing the following (as applicable):**
+### Models Used
+- **Random Forest Classifier** for exploratory modeling and feature importance analysis
+- **Large Language Models (LLMs):**
+  - OpenAI for embeddings
+  - Claude API for prompt engineering and investor discovery
 
-* Performance metrics (e.g., Accuracy, F1 score, RMSE)
-* How your model performed
-* Insights from evaluating model fairness
+### Feature Selection & Tuning
+- Extracted and analyzed feature importances from the Random Forest model
+- Focused on interpretable features aligned with stakeholder needs
+- Minimal hyperparameter tuning due to dataset size
 
-**Potential visualizations to include:**
+### Training Setup
+- **Training set:** 46 samples
+- **Validation set:** 10 samples
+- **Test set:** 10 samples
+- Evaluation focused on exploratory feasibility rather than deployment-ready accuracy
 
-* Confusion matrix, precision-recall curve, feature importance plot, prediction distribution, outputs from fairness or explainability tools
+---
+
+## 📈 Results & Key Findings
+
+### Model Performance
+- Random Forest achieved strong performance on training data
+- Results are **directional** due to limited sample size
+- Feature importance analysis identified key predictors for investor–startup matching
+
+### Key Takeaways
+- Data quality significantly impacts AI and LLM performance
+- Aligning startup attributes with investor preferences improves match relevance
+- LLMs provide faster, more consistent summaries than manual research
 
 ---
 
-## 🚀 **Next Steps**
+## 🚀 Next Steps
 
-**You might consider addressing the following (as applicable):**
+- Expand the dataset using additional SEC filings and external data sources
+- Improve LLM prompt engineering for higher-quality investor discovery
+- Validate AI-generated matches with real-world investor feedback
+- Develop a functional web platform for deployment
+- Explore fairness, bias, and explainability in investor recommendations
 
-* What are some of the limitations of your model?
-* What would you do differently with more time/resources?
-* What additional datasets or techniques would you explore?
 
----
 
 ## 📝 **License**
 
