@@ -1,4 +1,5 @@
-# Your AI Studio Challenge Project Title Here
+# INTERNATIONAL ELITE CAPITAL 2B - Investor Relations AI Product
+
 
 ⚠️ _Update the above title with your AI Studio Challenge Project name. Remove all guidance notes and examples in this template before finalizing your README._
 
