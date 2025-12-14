@@ -11,7 +11,7 @@
 
 | Name             | GitHub Handle | Contribution                                                             |
 |------------------|---------------|--------------------------------------------------------------------------|
-| Jade Xu    | @ |            |
+| Jade Xu    | @bxjyj | Data collection, data preprocessing, data analysis, ML model design, prompt engineering, data engineering, application development, app hosting   |
 | Anusha Kokala   | @anushakokala     | Data collection, data preprocessing (data manipulation & visualization, model selection + training, and feature engineering) |
 | Shatakshi Tyag     | @ |               |
 |  Ayooluwa Wojuade    | @       | |
