@@ -10,7 +10,7 @@
 |------------------|---------------|--------------------------------------------------------------------------|
 | Jade Xu    | @bxjyj | Data collection, data preprocessing, data analysis, ML model design, prompt engineering (OpenAI embeddings and Claude API), agentic AI prototype, data engineering, application development   |
 | Anusha Kokala   | @anushakokala     | Data collection, data preprocessing (data manipulation & visualization, model selection + training, and feature engineering) |
-| Shatakshi Tyagi     | @ |               |
+| Shatakshi Tyagi     | @shatakshi-exe | Data collection, data Preprocessing, data transformation, data analysis, feature extraction, model evaluation, prompt engineering |
 |  Ayooluwa Wojuade    | @  ayooluwaaaa     |Data collection,Data cleaning, Exploratory Data Analysis, Data Preprocessing, Feature Analysis for ML models|
 
 
